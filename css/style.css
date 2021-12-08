@@ -1,0 +1,306 @@
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+	font-family: 'Rubik', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	background: hsl(226, 43%, 10%);
+}
+
+footer {
+	font-size: 30%;
+	text-align: center;
+	margin-top: 1rem;
+	color: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.one {
+	display: flex;
+	flex-direction: column;
+}
+
+.times.active {
+  color: #fff;
+}
+
+.overlay {
+	background: white;
+	position: absolute;
+	opacity: 0;
+	border-radius: 1rem;
+}
+
+.dots {
+	position: absolute;
+	z-index: 1;
+}
+
+.dots:hover {
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+}
+
+.one:hover .overlay {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.text {
+	background: hsl(235, 46%, 20%);
+	color: #fff;
+}
+
+.first {
+	background: hsl(235, 46%, 20%);
+	border-radius: 1rem;
+}
+
+.Jeremy {
+	background: hsl(246, 80%, 60%);
+	border-radius: 1rem;	
+}
+
+.name {
+	color: #fff;
+	font-weight: 300;
+}
+
+.p {
+	color: hsl(236, 100%, 87%);
+	font-weight: 400;
+}
+
+.times {
+	color: hsl(236, 100%, 87%);
+	font-weight: 400;
+	background: hsl(235, 46%, 20%);
+}
+
+.times:hover {
+	color: #fff;
+}
+
+.boxtwo {
+	background: hsl(15, 100%, 70%);
+	background-image: url('../images/icon-work.svg');
+}
+
+.boxthree {
+	background: hsl(195, 74%, 62%);
+	background-image: url('../images/icon-play.svg');
+}
+
+.boxfour {
+	background: hsl(348, 100%, 68%);
+	background-image: url('../images/icon-study.svg');
+}
+
+.boxfive {
+	background: hsl(145, 58%, 55%);
+	background-image: url('../images/icon-exercise.svg');
+}
+
+.boxsix {
+	background: hsl(264, 64%, 52%);
+	background-image: url('../images/icon-social.svg');
+}
+
+.boxseven {
+	background: hsl(43, 84%, 65%);
+	background-image: url('../images/icon-self-care.svg');
+}
+
+.two {
+	background-repeat: no-repeat;
+	background-position: 92% -1rem;
+	border-radius: 1rem;
+}
+
+.one {
+	border-radius: 1rem;
+}
+
+.img {
+	border: 3px solid white;
+	border-radius: 50%;
+}
+
+h2 {
+	font-weight: 500;
+}
+
+h1 {
+	font-weight: 300;
+}
+
+.three {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media screen and (min-width: 280px) {
+	.main {
+		width: 330px;
+		margin: 0 auto;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.inline {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.two {
+		padding-top: 2.3rem;
+		margin-top: 1.5rem;
+	}
+
+	.img {
+    width: 70px;
+    height: auto;   
+	}
+
+	.Jeremy {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-size: 80%;
+		padding: 1.5rem;
+	}
+
+	.Jeremy h1 {
+		margin-top: .3rem;
+	}
+
+	.Jeremy p {
+		margin-bottom: .3rem;
+	}
+
+	.menu {
+		padding: 1rem 2rem;
+	}
+
+	.head {
+        margin-right: 1rem;
+	}
+
+	.three {
+		font-size: 80%;
+	}
+
+	.four {
+		height:35px;
+		font-size: 100%;
+	}
+
+	.one {
+		padding: 1rem 1.5rem 2rem 1.5rem;
+	}
+
+	.overlay {
+		width: 330px;
+		height: 137px;
+		margin: -1rem 0 0 -1.5rem;
+	}
+
+	.dots {
+		margin: 2.6rem 0 0 17.8rem;
+	}
+}
+
+@media screen and (min-width: 900px) {
+	.main {
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		grid-gap: 1.5rem;
+		margin-top: 5rem;
+	}
+
+	.dots {
+		margin: 2.5rem 0 0 12.8rem;
+	}
+
+	.first {
+		grid-row: 1 / 3;
+		width: 250px;
+	}
+
+	.overlay {
+		width: 250px;
+		height: 201px;
+		margin: -1rem 0 0 -1.5rem;
+	}
+
+	.four {
+		height: auto;
+		font-size: 100%;
+		align-items: baseline;
+	}
+
+	.menu {
+		align-items: baseline;
+	}
+
+	.two {
+		margin-top: 0;
+		width: 250px;
+	}
+
+	.inline {
+		flex-direction: column;
+	}
+
+	.menu {
+		padding: 1rem 2rem;
+		font-size: 110%;
+	}
+
+	.Jeremy {
+		flex-direction: column;
+		align-items: baseline;
+		font-size: 95%;
+		padding-bottom: 2.3rem;
+	}
+
+	.name {
+		font-size: 270%;
+	}
+
+	.img {
+		width: 90px;
+		margin-bottom: 1.5rem;
+	}
+
+	.times {
+		margin: .7rem 0;
+	}
+
+	.six {
+		margin: .3rem 0;
+		font-size: 350%;
+	}
+
+	.seven {
+		margin: .3rem 0;
+	}
+
+	.one {
+		padding-bottom: 1.5rem;
+	}
+}
